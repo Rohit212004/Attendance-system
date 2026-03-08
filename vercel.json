@@ -1,0 +1,16 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_SUPABASE_URL": "@vite_supabase_url",
+    "VITE_SUPABASE_ANON_KEY": "@vite_supabase_anon_key",
+    "VITE_TEACHER_EMAIL": "@vite_teacher_email",
+    "VITE_TEACHER_PASSWORD": "@vite_teacher_password"
+  },
+  "rewrites": [
+    {
+      "source": "/((?!_next/static|_next/image|.*\\.js|.*\\.css|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.gif|.*\\.webp|.*\\.ico).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
